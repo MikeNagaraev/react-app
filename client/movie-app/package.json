@@ -13,5 +13,9 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "eslint": "eslint src"
+  },
+  "devDependencies": {
+    "semantic-ui-css": "^2.3.1",
+    "semantic-ui-react": "^0.79.1"
   }
 }

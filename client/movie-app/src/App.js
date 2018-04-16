@@ -1,5 +1,10 @@
 import React from 'react';
+import HomePage from './components/pages/HomePage';
 
-const App = () => <div>Hello World</div>
+const App = () => ( // functional component
+  <div className="ui container">
+    <HomePage />
+  </div>
+)
 
 export default App;
