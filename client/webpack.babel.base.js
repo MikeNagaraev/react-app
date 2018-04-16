@@ -19,12 +19,31 @@ const plugins = [
 ];
 
 const rules = [
-   { 
+    {
+        test: /\.html$/,
+        use: [
+            {
+                loader: 'html-loader'
+            }
+        ]
+    },
+    { 
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: "babel-loader",
         query: {
             presets: ['react']
+        }
+    },
+    {
+        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
+        loader: "file-loader?name=[path][name].[ext]"
+    },
+    {   
+        test: /\.css$/,
+        loader: 'css-loader',
+        options: {
+            sourceMap: true
         }
     }
 ];
