@@ -15,18 +15,10 @@ const plugins = [
     new HtmlWebpackPlugin({
         template: path.resolve(rootPath, "index.html"),
         inject: "body"
-    }),
+    })
 ];
 
 const rules = [
-    {
-        test: /\.html$/,
-        use: [
-            {
-                loader: 'html-loader'
-            }
-        ]
-    },
     { 
         test: /\.jsx?$/,
         exclude: /node_modules/,
@@ -49,8 +41,6 @@ const rules = [
 ];
 
 export default (options) => {
-    let BUILD = options.BUILD;
-
     const config = {
         resolve: {
             extensions: [
@@ -64,15 +54,10 @@ export default (options) => {
             path: publicPath,
             filename: outputPathName
         },
-        devServer: {
-            port: 9000,
-            contentBase: publicPath
-        },
         module: {
             rules
         },
-        plugins: plugins,
-        devtool: BUILD ? "source-map" : ""
+        plugins: plugins
     };
     
     return config;
