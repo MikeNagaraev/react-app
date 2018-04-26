@@ -8,7 +8,7 @@ export default class HomePage extends React.Component { // react Component
     render() {
         return (
             <div>
-                { header }
+                {header}
                 <SearchMovieForm />
             </div>
         )
