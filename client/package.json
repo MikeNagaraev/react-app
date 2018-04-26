@@ -10,16 +10,16 @@
     "webpack-dev-server": "^3.1.3"
   },
   "scripts": {
-    "build:development": "rimraf public && webpack --env.development --progress --color -p --display-error-details",
-    "build:production": "rimraf public && webpack --env.production --progress --color -p --display-error-details",
-    "start": "webpack-dev-server --env.development --progress --color -p --display-error-details",
+    "build:development": "rimraf public && webpack --env=development --progress --color --display-error-details",
+    "build:production": "rimraf public && webpack --env=production --progress --color --display-error-details",
+    "start": "webpack-dev-server --env=development --progress --color --display-error-details",
     "test": "jest"
   },
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.28.11",
