@@ -3,7 +3,7 @@ import React from "react";
 export default class Footer extends React.Component {
     render () {
         return (
-            <div className="footer navbar-fixed-bottom container">
+            <div className="footer container">
                 <p>netflixroulette</p>
             </div>
         )

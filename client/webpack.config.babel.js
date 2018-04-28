@@ -8,6 +8,7 @@ const rootPath = path.resolve(__dirname);
 const srcPath = path.resolve(__dirname, "src");
 const publicPath = path.resolve(__dirname, "public");
 const nodeModules = path.resolve(__dirname, "node_modules");
+const staticPath = path.resolve(__dirname, "static");
 
 const outputPathName = "src/index.min.js";
 
@@ -16,10 +17,38 @@ const plugins = [
         template: path.resolve(rootPath, "index.html"),
         inject: "body"
     }),
+    new CopyWebpackPlugin([
+        {
+            from: "static",
+            to: "assets"
+        }
+    ]),
     new ExtractTextPlugin("src/styles.min.css")
 ];
 
 const rules = [
+    {
+        test: /\.(eot|svg|ttf)$/,
+        use: [
+            {
+                loader: "url-loader",
+                options: {
+                    name: path.resolve(staticPath, "fonts/**/[name].[ext]")
+                }
+            }
+        ]
+    },
+    {
+        test: /\.(jpe?g|png|gif|svg)$/,
+        use: [
+            {
+                loader: "url-loader",
+                options: {
+                    name: path.resolve(staticPath, "images/[name].[ext]")
+                }
+            }
+        ]
+    },
     {
         test: /\.jsx?$/,
         exclude: /node_modules/,
@@ -27,10 +56,6 @@ const rules = [
         query: {
             presets: ['react']
         }
-    },
-    {
-        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-        loader: "file-loader?name=/assets/[name].[ext]"
     },
     {
         test: /\.(css|less)$/,

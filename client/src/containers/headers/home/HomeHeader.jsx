@@ -1,5 +1,5 @@
 import React from "react";
-import SearchMovieForm from '../../../components/forms/SearchMovieForm';
+import SearchMovieForm from '../../forms/SearchMovieForm';
 
 const logo = React.createElement("h1", { className: "logo" }, "netflixroulette"); // create Element
 
