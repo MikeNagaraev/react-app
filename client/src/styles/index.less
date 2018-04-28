@@ -1,0 +1,35 @@
+@import "./colors";
+@import "../containers/containers";
+@import "../components/components";
+body {
+    font-family: Roboto;
+}
+
+.app-container {}
+
+@media only screen and (max-width: 600px) {
+    .app-container {
+        padding: 0;
+    }
+}
+
+input {
+    font-family: Roboto !important;
+    outline: none;
+    border: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    color: @white1;
+}
+
+input::-webkit-input-placeholder {
+    font-family: Roboto !important;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../static/fonts/Roboto/Roboto-Regular.ttf");
+}

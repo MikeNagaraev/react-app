@@ -15,7 +15,8 @@ const plugins = [
     new HtmlWebpackPlugin({
         template: path.resolve(rootPath, "index.html"),
         inject: "body"
-    })
+    }),
+    new ExtractTextPlugin("src/styles.min.css")
 ];
 
 const rules = [
@@ -29,14 +30,23 @@ const rules = [
     },
     {
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-        loader: "file-loader?name=[path][name].[ext]"
+        loader: "file-loader?name=/assets/[name].[ext]"
     },
     {
-        test: /\.css$/,
-        loader: 'css-loader',
-        options: {
-            sourceMap: true
-        }
+        test: /\.(css|less)$/,
+        exclude: nodeModules,
+        use: ExtractTextPlugin.extract({
+            fallback: "style-loader",
+            use: [
+                {
+                    loader: 'css-loader',
+                    options: {
+                        sourceMap: true
+                    }
+                },
+                "less-loader"
+            ]
+        })
     }
 ];
 

@@ -1,0 +1,41 @@
+.header {
+  background: url(/assets/header.jpg);
+  width: 100%;
+  height: 200px;
+}
+.logo {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #DF5A65;
+  padding: 20px 0 0 40px;
+  font-weight: bolder;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    font-size: 3rem;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+.searchMovie-form {
+  width: 100%;
+  padding: 20px 70px;
+}
+.searchMovie-label {
+  text-transform: uppercase;
+  color: aliceblue;
+}
+.searchMovie-input {
+  width: 100%;
+  height: 40px;
+  background: #191919 !important;
+}
+body {
+  font-family: Roboto;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(/assets/Roboto-Regular.ttf);
+}
+
+/*# sourceMappingURL=styles.min.css.map*/
