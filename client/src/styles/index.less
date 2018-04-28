@@ -1,13 +1,21 @@
 @import "./colors";
 @import "../containers/containers";
 @import "../components/components";
-body {
-    font-family: Roboto;
+@import "../views/Home";
+html {
+    height: 100%;
 }
 
-.app-container {}
+body {
+    font-family: Roboto;
+    min-height: 100%;
+}
 
-@media only screen and (max-width: 600px) {
+.app-container {
+    // padding: 0 10rem;
+}
+
+@media only screen and (max-width: 800px) {
     .app-container {
         padding: 0;
     }
