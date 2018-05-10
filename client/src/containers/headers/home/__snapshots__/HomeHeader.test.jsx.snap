@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeHeader component renders correctly snapshot 1`] = `
+<div
+  className="header"
+>
+  <h1
+    className="logo"
+  >
+    netfilxroulette
+  </h1>
+  <form
+    className="searchMovie-form"
+  >
+    <label
+      className="searchMovie-label"
+    >
+      Find your movie
+    </label>
+    <input
+      className="searchMovie-input"
+      placeholder="Search film..."
+    />
+    <div
+      className="searchMovie-bottom-panel"
+    >
+      <div
+        className="searchMovie-filter"
+      >
+        <label
+          className="searchMovie-filter-label"
+        >
+          Search by
+        </label>
+        <button
+          className="searchMovie-filter-choise searchMovie-filter-choise--active"
+        >
+          Title
+        </button>
+        <button
+          className="searchMovie-filter-choise"
+        >
+          Genre
+        </button>
+      </div>
+      <div>
+        <button
+          className="searchMovie-submit-button"
+          disabled={undefined}
+          onClick={undefined}
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+`;

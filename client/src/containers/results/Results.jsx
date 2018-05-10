@@ -12,8 +12,8 @@ export default class Results extends React.Component {
 
     render() {
         const movieCards = [];
-        this.state.movies.map((element, i) => {
-            movieCards.push(<MovieCard key={i} />);
+        this.state.movies.map((card, i) => {
+            movieCards.push(<MovieCard title={card.title} year={card.year} genre={card.genre} picture={card.picture} key={i} />);
         });
         return (
             <div className="resultsContainer">

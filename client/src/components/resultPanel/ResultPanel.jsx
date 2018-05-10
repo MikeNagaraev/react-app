@@ -1,11 +1,12 @@
 import React from "react";
 
 export default class ResultPanel extends React.Component {
-    render () {
+    render() {
+        const { count } = this.props;
         return (
             <div className="resultPanel">
                 <div className="resultPanel-count">
-                    7 movies found
+                    {count} movies found
                 </div>
                 <div className="resultPanel-sort">
                     <span>Sort by</span>

@@ -1,8 +1,8 @@
 import React from 'react';
-import HomePage from './views/Home';
+import HomePage from './views/home/Home';
 import "./styles/index.less";
 
-const App = () => ( // functional component
+const App = () => (
   <div className="app-container container">
     <HomePage />
   </div>

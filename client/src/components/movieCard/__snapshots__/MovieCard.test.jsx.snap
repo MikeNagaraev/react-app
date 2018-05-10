@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieCard component renders correctly snapshot 1`] = `
+<div
+  className="movieCard"
+>
+  <div
+    className="movieCard-img"
+  >
+    <img
+      alt=""
+      src="/assets/images/pulp.jpg"
+    />
+  </div>
+  <div
+    className="movieCard-description"
+  >
+    <div
+      className="movieCard-description-line"
+    >
+      <span
+        className="movieCard-title"
+      >
+        Film 1
+      </span>
+      <span
+        className="movieCard-year"
+      >
+        2004
+      </span>
+    </div>
+    <div
+      className="movieCard-description-line"
+    >
+      <span
+        className="movieCard-genre"
+      >
+        Action
+      </span>
+    </div>
+  </div>
+</div>
+`;

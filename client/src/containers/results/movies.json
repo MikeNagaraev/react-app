@@ -3,22 +3,26 @@
         {
             "title": "Film 1",
             "year": "2004",
-            "genre": "Action"
+            "genre": "Action",
+            "picture": "/assets/images/pulp.jpg"
         },
         {
             "title": "Film 1",
             "year": "2004",
-            "genre": "Action"
+            "genre": "Action",
+            "picture": "/assets/images/pulp.jpg"
         },
         {
             "title": "Film 1",
             "year": "2004",
-            "genre": "Action"
+            "genre": "Action",
+            "picture": "/assets/images/pulp.jpg"
         },
         {
             "title": "Film 1",
             "year": "2004",
-            "genre": "Action"
+            "genre": "Action",
+            "picture": "/assets/images/pulp.jpg"
         }
     ]
 }

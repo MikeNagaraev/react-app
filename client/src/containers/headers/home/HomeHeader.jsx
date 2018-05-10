@@ -1,13 +1,12 @@
 import React from "react";
-import SearchMovieForm from '../../forms/SearchMovieForm';
-
-const logo = React.createElement("h1", { className: "logo" }, "netflixroulette"); // create Element
+import SearchMovieForm from '../../forms/movie/SearchMovieForm';
+import Logo from "../../../components/logo/Logo";
 
 export default class HomeHeader extends React.Component {
     render() {
         return (
             <div className="header">
-                {logo}
+                <Logo title="netfilxroulette" className="logo" />
                 <SearchMovieForm />
             </div>
         )
