@@ -6,7 +6,7 @@ export default class HomeHeader extends React.Component {
     render() {
         return (
             <div className="header">
-                <Logo title="netfilxroulette" className="logo" />
+                <Logo title="netflixroulette" className="logo" />
                 <SearchMovieForm />
             </div>
         )
