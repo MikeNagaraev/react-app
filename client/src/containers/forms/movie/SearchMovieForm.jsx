@@ -1,8 +1,8 @@
 import React from "react";
-import SearchButton from "../../components/buttons/SearchButton";
-import FilterPanel from "../../components/filterPanel/FilterPanel";
+import SearchButton from "../../../components/buttons/SearchButton";
+import FilterPanel from "../../../components/filterPanel/FilterPanel";
 
-class SearchMovieForm extends React.PureComponent { // pure Component
+class SearchMovieForm extends React.PureComponent {
     render() {
         return (
             <form className="searchMovie-form">

@@ -3,22 +3,21 @@ import { mount, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import renderer from 'react-test-renderer';
 
+import SearchMovieForm from './SearchMovieForm';
 
-import HomeHeader from './HomeHeader';
-
-describe('HomeHeader component', () => {
+describe('SearchMovieForm component', () => {
     beforeAll(() => {
         configure({ adapter: new Adapter() });
     });
 
     it('should render component', () => {
-        const enzymeWrapper = mount(<HomeHeader />);
-        expect(enzymeWrapper.find('.header')).toHaveLength(1);
+        const enzymeWrapper = mount(<SearchMovieForm />);
+        expect(enzymeWrapper.find('.searchMovie-form')).toHaveLength(1);
     });
 
     it('renders correctly snapshot', () => {
         const tree = renderer.create(
-            <HomeHeader />
+            <SearchMovieForm />
         ).toJSON();
         expect(tree).toMatchSnapshot();
     });

@@ -1,11 +1,16 @@
 import React from "react";
 
 export default class Footer extends React.Component {
+    constructor(props) {
+        super(props);
+        this.props = props;
+    }
+    
     render () {
         return (
-            <div className="footer container">
-                <p>netflixroulette</p>
-            </div>
+            <footer className="footer container">
+                <p>{this.props.text}</p>
+            </footer>
         )
     }
 }
