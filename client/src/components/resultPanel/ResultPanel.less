@@ -1,0 +1,34 @@
+.resultPanel {
+    width: 100%;
+    height: 4rem;
+    background: @grey2;
+    clear: both;
+    color: @black1;
+    padding: 1rem 7rem;
+    &-count {
+        float: left;
+    }
+    &-sort {
+        float: right;
+        &-option {
+            margin-left: 3rem;
+            cursor: pointer;
+            color: @grey1;
+            &:hover {
+                color: darken(@grey1, 10%);
+            }
+            &--active {
+                color: @red1;
+                &:hover {
+                    color: @red1;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .resultPanel {
+        padding: 1rem 2rem;
+    }
+}

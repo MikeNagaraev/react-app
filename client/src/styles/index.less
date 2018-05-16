@@ -1,0 +1,43 @@
+@import "./colors";
+@import "../containers/containers";
+@import "../components/components";
+@import "../views/Home";
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Roboto;
+    min-height: 100%;
+}
+
+.app-container {
+    // padding: 0 10rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .app-container {
+        padding: 0;
+    }
+}
+
+input {
+    font-family: Roboto !important;
+    outline: none;
+    border: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    color: @white1;
+}
+
+input::-webkit-input-placeholder {
+    font-family: Roboto !important;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
+}

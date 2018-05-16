@@ -12,7 +12,8 @@
   "scripts": {
     "build:development": "rimraf public && webpack --env=development --progress --color --display-error-details",
     "build:production": "rimraf public && webpack --env=production --progress --color --display-error-details",
-    "start": "webpack-dev-server --env=development --progress --color --display-error-details",
+    "server": "webpack-dev-server --env=development --progress --color --display-error-details",
+    "start": "webpack --env=development --progress --color --display-error-details",
     "test": "jest"
   },
   "devDependencies": {
@@ -23,16 +24,18 @@
     "babel-preset-react": "^6.24.1",
     "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.28.11",
-    "extract-text-webpack-plugin": "^3.0.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
-    "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^22.4.3",
+    "less": "^3.0.2",
+    "less-loader": "^4.1.0",
     "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
     "redux": "^4.0.0",
     "semantic-ui-react": "^0.79.1",
-    "webpack-cli": "^2.0.14",
-    "webpack-merge": "^4.1.2"
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "webpack-cli": "^2.0.14"
   }
 }
